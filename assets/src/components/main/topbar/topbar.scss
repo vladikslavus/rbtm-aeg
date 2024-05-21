@@ -1,0 +1,121 @@
+// X-Small devices (portrait phones, less than 576px)
+.header {
+  height: auto;
+  margin-top: 0;
+}
+
+.topbar {
+  background: #fff;
+  transition: all .15s ease-in-out;
+  
+  &__top {    
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+
+    p, a {
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-rights {
+    display: flex;
+  }
+  &__top-worktime {
+    padding-right: 18px;
+  }
+  &__top-tel {
+    font-family: 'Avenir Next Cyr Bold';
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__bottom {
+    position: fixed;
+    width: 100%;
+    padding: 14px 0;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+
+    & > .container {
+      position: relative;
+    }
+
+    a {
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-rights {
+    transition: all .3s ease-in-out;
+  }
+  &__bottom-links {
+    display: flex;
+    list-style: none;
+  }
+  &__bottom-li {
+    margin-left: 25px;
+  }
+  &__bottom-link {
+    transition: color .15s ease-in-out;
+
+    &:hover {
+      color: $color_main_brand;
+    }
+  }
+  &__bottom-consult {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    display: flex;
+    align-items: center;    
+    padding: 10px;
+    background: #fff;    
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    p, a {
+      font-size: 16px;
+    }
+  }
+  &__bottom-tel {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  &__bottom-tel {
+    font-family: 'Avenir Next Cyr Bold';
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__bottom-btn {
+    padding: 12px 35px;
+    color: #fff;
+    // background: $color_main_brand;
+    background: radial-gradient(100% 718.2% at 0 0, $color_main_brand 100%, #689b1a 0%);
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    transition: background .4s ease-in-out;
+
+    &:hover {      
+      background: radial-gradient(100% 718.2% at 0 0, $color_main_brand 0, #689b1a 100%);
+      cursor: pointer;
+    }
+  }
+}
+
