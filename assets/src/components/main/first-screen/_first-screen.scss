@@ -8,9 +8,20 @@
   background: #a5b4ff;
 
   h1 {
-    width: 30%;
+    width: 90%;
     text-align: center;
     font-family: 'Avenir Next Cyr Bold';
-    font-size: 42px;
+    font-size: 24px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .first-screen {
+  
+    h1 {
+      width: 30%;
+      font-size: 42px;
+    }
   }
 }
